@@ -42,10 +42,10 @@ class _ItemsState extends State<Items>{
     // TODO: implement build
     return GridView.builder(
       itemCount: item_list.length,
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
         itemBuilder: (BuildContext context, int index){
           return Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(3.0),
               child: Single_item(
                 item_name: item_list[index]['name'],
                 item_icon: item_list[index]['picture'],
@@ -59,44 +59,58 @@ class _ItemsState extends State<Items>{
 class Single_item extends StatelessWidget{
   final item_name;
   final item_icon;
+  Color mainColor = const Color(0xff3C3261);
 
   Single_item({this.item_name, this.item_icon});
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return Padding(
-      padding: const EdgeInsets.all(2.0),
-      child: Container(
-          decoration: BoxDecoration(
-            color: Colors.transparent,
-            boxShadow: [
-              BoxShadow(
-                color: Colors.grey[350],
-                blurRadius:
-                10.0, // has the effect of softening the shadow
-              )
+      padding: const EdgeInsets.all(0.0),
+      child: FlatButton(
+        onPressed: (){
+          ItemAction(item_name, context);
+        },
+        child:Container(
+          margin: const EdgeInsets.all(0.0),
+          child: Column(
+            children: <Widget>[
+              Padding(
+                padding: const EdgeInsets.all(5.0),
+                child: new Container(
+                  margin: const EdgeInsets.fromLTRB(0,1.0,0,1.0),
+                  child: new Container(
+                    height: 74.0,
+                    width: 74,
+                  ),
+                  decoration: new BoxDecoration(
+                    borderRadius: new BorderRadius.circular(50.0),
+                    color: Colors.white,
+                    image: new DecorationImage(
+                        image: AssetImage(item_icon),
+                        fit: BoxFit.cover
+                    ),
+                    boxShadow: [
+                      new BoxShadow(
+                          color: mainColor,
+                          blurRadius: 15.0,
+                          offset: new Offset(2.0, 5.0))
+                    ],
+                  ),
+                ),
+              ),
+              new Text(item_name,
+                maxLines: 2,
+                style: new TextStyle(
+                  color: Colors.black87,
+                  fontSize: 12,
+                  fontFamily: 'Arvo',
+                ),
+                textAlign: TextAlign.center,
+              ),
             ],
           ),
-          child: Material(
-            borderRadius: BorderRadius.circular(40),
-            child: InkWell(
-              onTap: () {ItemAction('$item_name', context);},
-              child: GridTile(
-                  footer: Container(
-                      color: Colors.black26,
-                      child: ListTile(
-                        title: Text(
-                          "$item_name",
-                          style: TextStyle(color:Colors.white, fontWeight: FontWeight.bold),
-                        ),
-                      )
-                  ),
-                  child: Image.asset(
-                    item_icon,
-                    fit: BoxFit.cover,
-                  )),
-            ),
-          )
+        ),
       ),
     );
   }
