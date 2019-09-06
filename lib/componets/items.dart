@@ -80,8 +80,8 @@ class Single_item extends StatelessWidget{
                 child: new Container(
                   margin: const EdgeInsets.fromLTRB(0,1.0,0,1.0),
                   child: new Container(
-                    height: 74.0,
-                    width: 74,
+                    height: 70.0,
+                    width: 70.0,
                   ),
                   decoration: new BoxDecoration(
                     borderRadius: new BorderRadius.circular(50.0),

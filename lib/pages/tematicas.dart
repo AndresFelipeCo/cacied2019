@@ -58,22 +58,21 @@ class Tematicas extends StatelessWidget{
             itemCount: tematicas.length,
             itemBuilder: (context, index){
               return Container(
-                  margin: const EdgeInsets.all(16.0),
+                  margin: const EdgeInsets.all(10.0),
                   child: new Column(
                     children: <Widget>[
                       Row(
                         children: <Widget>[
-                          Icon(Icons.description, color: Colors.blueAccent,),
+                          Icon(Icons.assignment, color: Colors.black45),
                           Expanded(
                             child: Container(
-                              margin: const EdgeInsets.all(10.0),
+                              margin: const EdgeInsets.all(3.0),
                               child: Text(tematicas[index]['name'],
                                 maxLines: 5,
                                 style: new TextStyle(
-                                    fontSize: 20.0,
+                                    fontSize: 17.0,
                                     fontFamily: 'Arvo',
                                     fontWeight: FontWeight.bold,
-                                    color: Colors.black45
                                 ),
                               ),
                             ),

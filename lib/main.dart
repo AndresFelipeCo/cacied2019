@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:cacied/pages/listMenu.dart';
 import 'pages/home.dart';
 
 void main() => runApp(new MyApp());
@@ -24,7 +23,7 @@ class _MyApp extends State<MyApp>{
       title: 'CACIED 2019',
       theme: ThemeData(
         brightness: Brightness.light,
-        primaryColor: Colors.blueAccent,
+        primaryColor: const Color(0xff1a237e),
         accentColor: Colors.teal,
 
         // Define la Familia de fuente por defecto

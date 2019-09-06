@@ -1,6 +1,7 @@
 import 'package:cacied/componets/drawDrawer.dart';
 import 'package:cacied/componets/drawListMenu.dart';
 import 'package:cacied/pages/ponencia.dart';
+import 'package:cacied/pages/ponente.dart';
 import 'package:flutter/material.dart';
 
 class ListMenu extends StatefulWidget{
@@ -17,63 +18,81 @@ class _ListMenuState extends State<ListMenu>{
       "group": "1",
       "site": "Auditorio Madre Caridad Universidad Mariana",
       "day" : "1 Nov",
-      "hour": "2:00 pm"
+      "hour": "2:00 pm",
+      "lat" :"1.223875",
+      "lng" : "-77.283344"
     },
     {
       "name": "Metodología temporal para la recuperación de áreas perdidas en imágenes satelitales M0D09GA",
       "group": "1",
       "site": "Auditorio Madre Caridad Universidad Mariana",
       "day" : "1 Nov",
-      "hour": "2:00 pm"
+      "hour": "2:00 pm",
+      "lat" :"1.223875",
+      "lng" : "-77.283344"
     },
     {
       "name": "Metodología temporal para la recuperación de áreas perdidas en imágenes satelitales M0D09GA",
       "group": "1",
       "site": "Auditorio Madre Caridad Universidad Mariana",
       "day" : "1 Nov",
-      "hour": "2:00 pm"
+      "hour": "2:00 pm",
+      "lat" :"1.223875",
+      "lng" : "-77.283344"
     },
     {
       "name": "Metodología temporal para la recuperación de áreas perdidas en imágenes satelitales M0D09GA",
       "group": "1",
       "site": "Auditorio Madre Caridad Universidad Mariana",
       "day" : "1 Nov",
-      "hour": "2:00 pm"
+      "hour": "2:00 pm",
+      "lat" :"1.223875",
+      "lng" : "-77.283344"
     },
     {
       "name": "Metodología temporal para la recuperación de áreas perdidas en imágenes satelitales M0D09GA",
       "group": "1",
       "site": "Auditorio Madre Caridad Universidad Mariana",
       "day" : "1 Nov",
-      "hour": "2:00 pm"
+      "hour": "2:00 pm",
+      "lat" :"1.223875",
+      "lng" : "-77.283344"
     },
     {
       "name": "Metodología temporal para la recuperación de áreas perdidas en imágenes satelitales M0D09GA",
       "group": "1",
       "site": "Auditorio Madre Caridad Universidad Mariana",
       "day" : "1 Nov",
-      "hour": "2:00 pm"
+      "hour": "2:00 pm",
+      "lat" :"1.223875",
+      "lng" : "-77.283344"
     },
     {
       "name": "Metodología temporal para la recuperación de áreas perdidas en imágenes satelitales M0D09GA",
       "group": "1",
       "site": "Auditorio Madre Caridad Universidad Mariana",
       "day" : "1 Nov",
-      "hour": "2:00 pm"
+      "hour": "2:00 pm",
+      "lat" :"1.223875",
+      "lng" : "-77.283344"
     },
     {
       "name": "Metodología temporal para la recuperación de áreas perdidas en imágenes satelitales M0D09GA",
       "group": "1",
       "site": "Auditorio Madre Caridad Universidad Mariana",
       "day" : "1 Nov",
-      "hour": "2:00 pm"
+      "hour": "2:00 pm",
+      "lat" :"1.223875",
+      "lng" : "-77.283344"
     },
     {
       "name": "Metodología temporal para la recuperación de áreas perdidas en imágenes satelitales M0D09GA",
       "group": "1",
       "site": "Auditorio Madre Caridad Universidad Mariana",
       "day" : "1 Nov",
-      "hour": "2:00 pm"
+      "hour": "2:00 pm",
+      "lat" :"1.223875",
+      "lng" : "-77.283344"
     },
   ];
 
@@ -83,9 +102,54 @@ class _ListMenuState extends State<ListMenu>{
       "conference": "Formando arquitentos de TIC",
       "place": "Auditorio Madre Caridad Universidad Mariana",
       "photo": 'images/conference/01.jpg',
-      "training":{
-        "Formación": "PH.D en informatica, Universidad Joseph Fourier (Grenoble, Francia), Master en informatica..."
-      }
+      "lat" :"1.223875",
+      "lng" : "-77.283344",
+      "formacion": "Ph.D en Informática, Universidad Joseph Fourier (Grenoble, Francia), Master en Informática, Institut National Polytechnique (Grenoble, Francia), Ingeniero de Sistemas y Computación, Universidad de los Andes, Postdoctorado, Laboratorio LSR (Grenoble, Francia), Profesor Asociado Departamento de Ingeniería de Sistemas y Computación de la Universidad de los Andes. Investigador y consultor en las áreas de Arquitectura empresarial, Arquitectura de procesos y Arquitectura de solución.\nPertenece al Grupo de investigación TICSw - Tecnologías de la Información y Construcción de Software - TICSw"
+    },
+    {
+      "name": "JORGE VILLALOBOS SALCEDO",
+      "conference": "Formando arquitentos de TIC",
+      "place": "Auditorio Madre Caridad Universidad Mariana",
+      "photo": 'images/conference/01.jpg',
+      "lat" :"1.223875",
+      "lng" : "-77.283344",
+      "formacion": "Ph.D en Informática, Universidad Joseph Fourier (Grenoble, Francia), Master en Informática, Institut National Polytechnique (Grenoble, Francia), Ingeniero de Sistemas y Computación, Universidad de los Andes, Postdoctorado, Laboratorio LSR (Grenoble, Francia), Profesor Asociado Departamento de Ingeniería de Sistemas y Computación de la Universidad de los Andes. Investigador y consultor en las áreas de Arquitectura empresarial, Arquitectura de procesos y Arquitectura de solución.\nPertenece al Grupo de investigación TICSw - Tecnologías de la Información y Construcción de Software - TICSw"
+    },
+    {
+      "name": "JORGE VILLALOBOS SALCEDO",
+      "conference": "Formando arquitentos de TIC",
+      "place": "Auditorio Madre Caridad Universidad Mariana",
+      "photo": 'images/conference/01.jpg',
+      "lat" :"1.223875",
+      "lng" : "-77.283344",
+      "formacion": "Ph.D en Informática, Universidad Joseph Fourier (Grenoble, Francia), Master en Informática, Institut National Polytechnique (Grenoble, Francia), Ingeniero de Sistemas y Computación, Universidad de los Andes, Postdoctorado, Laboratorio LSR (Grenoble, Francia), Profesor Asociado Departamento de Ingeniería de Sistemas y Computación de la Universidad de los Andes. Investigador y consultor en las áreas de Arquitectura empresarial, Arquitectura de procesos y Arquitectura de solución.\nPertenece al Grupo de investigación TICSw - Tecnologías de la Información y Construcción de Software - TICSw"
+    },
+    {
+      "name": "JORGE VILLALOBOS SALCEDO",
+      "conference": "Formando arquitentos de TIC",
+      "place": "Auditorio Madre Caridad Universidad Mariana",
+      "photo": 'images/conference/01.jpg',
+      "lat" :"1.223875",
+      "lng" : "-77.283344",
+      "formacion": "Ph.D en Informática, Universidad Joseph Fourier (Grenoble, Francia), Master en Informática, Institut National Polytechnique (Grenoble, Francia), Ingeniero de Sistemas y Computación, Universidad de los Andes, Postdoctorado, Laboratorio LSR (Grenoble, Francia), Profesor Asociado Departamento de Ingeniería de Sistemas y Computación de la Universidad de los Andes. Investigador y consultor en las áreas de Arquitectura empresarial, Arquitectura de procesos y Arquitectura de solución.\nPertenece al Grupo de investigación TICSw - Tecnologías de la Información y Construcción de Software - TICSw"
+    },
+    {
+      "name": "JORGE VILLALOBOS SALCEDO",
+      "conference": "Formando arquitentos de TIC",
+      "place": "Auditorio Madre Caridad Universidad Mariana",
+      "photo": 'images/conference/01.jpg',
+      "lat" :"1.223875",
+      "lng" : "-77.283344",
+      "formacion": "Ph.D en Informática, Universidad Joseph Fourier (Grenoble, Francia), Master en Informática, Institut National Polytechnique (Grenoble, Francia), Ingeniero de Sistemas y Computación, Universidad de los Andes, Postdoctorado, Laboratorio LSR (Grenoble, Francia), Profesor Asociado Departamento de Ingeniería de Sistemas y Computación de la Universidad de los Andes. Investigador y consultor en las áreas de Arquitectura empresarial, Arquitectura de procesos y Arquitectura de solución.\nPertenece al Grupo de investigación TICSw - Tecnologías de la Información y Construcción de Software - TICSw"
+    },
+    {
+      "name": "JORGE VILLALOBOS SALCEDO",
+      "conference": "Formando arquitentos de TIC",
+      "place": "Auditorio Madre Caridad Universidad Mariana",
+      "photo": 'images/conference/01.jpg',
+      "lat" :"1.223875",
+      "lng" : "-77.283344",
+      "formacion": "Ph.D en Informática, Universidad Joseph Fourier (Grenoble, Francia), Master en Informática, Institut National Polytechnique (Grenoble, Francia), Ingeniero de Sistemas y Computación, Universidad de los Andes, Postdoctorado, Laboratorio LSR (Grenoble, Francia), Profesor Asociado Departamento de Ingeniería de Sistemas y Computación de la Universidad de los Andes. Investigador y consultor en las áreas de Arquitectura empresarial, Arquitectura de procesos y Arquitectura de solución.\nPertenece al Grupo de investigación TICSw - Tecnologías de la Información y Construcción de Software - TICSw"
     }
   ];
 
@@ -138,14 +202,32 @@ class _ListMenuState extends State<ListMenu>{
                                 Navigator.push(context,
                                     MaterialPageRoute(builder: (context){
                                       return Ponencia(
-                                          name: ponencias_list[index]['name'],
-                                          group: 'Grupo '+ponencias_list[index]['group'],
-                                          site: ponencias_list[index]['site'],
-                                          day: ponencias_list[index]['day'],
-                                          hour: ponencias_list[index]['hour']
+                                        name: ponencias_list[index]['name'],
+                                        group: 'Grupo '+ponencias_list[index]['group'],
+                                        site: ponencias_list[index]['site'],
+                                        day: ponencias_list[index]['day'],
+                                        hour: ponencias_list[index]['hour'],
+                                        lat: double.parse(ponencias_list[index]['lat']),
+                                        lng: double.parse(ponencias_list[index]['lng'])
                                       );
                                     })
                                 ) ;
+                              }
+
+                              if(widget.title == 'Conferencistas'){
+                                Navigator.push(context,
+                                    MaterialPageRoute(builder: (context){
+                                      return Ponente(
+                                        name: conferencistas_list[index]['name'],
+                                        photo: conferencistas_list[index]['photo'],
+                                        conference: conferencistas_list[index]['conference'],
+                                        formacion: conferencistas_list[index]['formacion'],
+                                        place: conferencistas_list[index]['place'],
+                                        lat: double.parse(conferencistas_list[index]['lat']),
+                                        lng: double.parse(conferencistas_list[index]['lng']),
+                                      );
+                                    })
+                                );
                               }
                             },
                           );
