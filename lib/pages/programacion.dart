@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'lineasTematicas.dart';
+
 class Programacion extends StatefulWidget{
   final String title;
   Programacion({Key key, @required this.title});
@@ -10,18 +12,22 @@ class Programacion extends StatefulWidget{
 class _ProgramacionState extends State<Programacion>{
   var listProg = [
     {
-      "date": "Miercoles 1 de Noviembre",
-      "events": [
-        {"name" :"Registro", "hour":"07:30-09:00", "name":"Hall Universidad Mariana", "lat":"1.223875", "long":"-77.283344" },
-        {"name" :"Registro", "hour":"07:30-09:00", "name":"Hall Universidad Mariana", "lat":"1.223875", "long":"-77.283344" },
-      ]
+      "date": "Miércoles 6 de Noviembre",
+      "place": "Universidad Mariana",
+      "photo": "images/unimar.jpg",
+      "day": "6"
     },
     {
-      "date": "Miercoles 1 de Noviembre",
-      "events":[
-        {"name" :"Registro", "hour":"07:30-09:00", "name":"Hall Universidad Mariana", "lat":"1.223875", "long":"-77.283344" },
-        {"name" :"Registro", "hour":"07:30-09:00", "name":"Hall Universidad Mariana", "lat":"1.223875", "long":"-77.283344" },
-      ]
+      "date": "Jueves 7 de Noviembre",
+      "place": "Universidad Cesmag",
+      "photo": "images/cesmag.jpg",
+      "day": "7"
+    },
+    {
+      "date": "Viernes 8 de Noviembre",
+      "place": "Universidad de Nariño",
+      "day": "8",
+      "photo": "images/udenar.jpg"
     }
   ];
   @override
@@ -55,21 +61,56 @@ class _ProgramacionState extends State<Programacion>{
           child: ListView.builder(
             itemCount: listProg.length,
               itemBuilder: (context, index){
-              var events = listProg[index]['events'];
-                return Column(
-                  children: <Widget>[
-                    Padding(
-                        padding: const EdgeInsets.all(2.0),
-                      child: Text(listProg[index]['date'],
-                        style: new TextStyle(
-                          fontSize: 16.0,
-                          fontFamily: 'Arvo',
-                          fontWeight: FontWeight.bold,
+                return Padding(
+                  padding: const EdgeInsets.all(7),
+                  child: FlatButton(
+                    onPressed: (){
+                      if(listProg[index]['day'] != '8'){
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context){
+                              return LineasTematicas(
+                                title: listProg[index]['date'],
+                                day: listProg[index]['day'],
+                                imageBar: listProg[index]['photo'],
+                              );
+                            })
+                        );
+                      }
+                    },
+                    child: Column(
+                      children: <Widget>[
+                        Row(
+                          children: <Widget>[
+                            Padding(
+                                padding: const EdgeInsets.all(12.0),
+                                child: Icon(Icons.calendar_today, color: const Color(0xff1a237e), size: 50,)
+                            ),
+
+                            Expanded(
+                              child: Container(
+                                margin: const EdgeInsets.all(3.0),
+                                child: Text(listProg[index]['date'] + '\n' + listProg[index]['place'],
+                                  maxLines: 5,
+                                  style: new TextStyle(
+                                    fontSize: 17.0,
+                                    fontFamily: 'Arvo',
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                            )
+                          ],
                         ),
-                        textAlign: TextAlign.center,
-                      ),
-                    )
-                  ],
+
+                        Container(
+                          width: 100.0,
+                          height: 0.5,
+                          color: const Color(0xD2D2E1ff),
+                          margin: const EdgeInsets.all(5.0),
+                        )
+                      ],
+                    ),
+                  ),
                 );
               }
           ),

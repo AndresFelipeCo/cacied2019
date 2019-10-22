@@ -1,7 +1,7 @@
 import 'package:cacied/componets/drawDrawer.dart';
 import 'package:cacied/componets/drawListMenu.dart';
-import 'package:cacied/pages/ponencia.dart';
-import 'package:cacied/pages/ponente.dart';
+import 'package:cacied/pages/conferencia.dart';
+import 'package:cacied/pages/conferencista.dart';
 import 'package:flutter/material.dart';
 
 class ListMenu extends StatefulWidget{
@@ -188,20 +188,20 @@ class _ListMenuState extends State<ListMenu>{
                 children: <Widget>[
                   Expanded(
                       child: ListView.builder(
-                        itemCount: widget.title == 'Ponencias' ? ponencias_list.length : conferencistas_list.length,
+                        itemCount: widget.title == 'Conferencias' ? ponencias_list.length : conferencistas_list.length,
                         itemBuilder: (context, index){
                           return FlatButton(
                             child: DrawListMenu(
-                              title: widget.title == 'Ponencias' ? 'Grupo: ' + ponencias_list[index]['group'] : conferencistas_list[index]['name'],
-                              subtitle: widget.title == 'Ponencias' ? null : 'Conferencia:',
-                              description: widget.title == 'Ponencias' ? ponencias_list[index]['name'] : conferencistas_list[index]['conference'],
-                              icon: widget.title == 'Ponencias' ? null : conferencistas_list[index]['photo'],
+                              title: widget.title == 'Conferencias' ? 'Grupo: ' + ponencias_list[index]['group'] : conferencistas_list[index]['name'],
+                              subtitle: widget.title == 'Conferencias' ? null : 'Conferencia:',
+                              description: widget.title == 'Conferencias' ? ponencias_list[index]['name'] : conferencistas_list[index]['conference'],
+                              icon: widget.title == 'Conferencias' ? null : conferencistas_list[index]['photo'],
                             ),
                             onPressed: () {
-                              if(widget.title == 'Ponencias'){
+                              if(widget.title == 'Conferencias'){
                                 Navigator.push(context,
                                     MaterialPageRoute(builder: (context){
-                                      return Ponencia(
+                                      return Conferencia(
                                         name: ponencias_list[index]['name'],
                                         group: 'Grupo '+ponencias_list[index]['group'],
                                         site: ponencias_list[index]['site'],
@@ -217,7 +217,7 @@ class _ListMenuState extends State<ListMenu>{
                               if(widget.title == 'Conferencistas'){
                                 Navigator.push(context,
                                     MaterialPageRoute(builder: (context){
-                                      return Ponente(
+                                      return Conferencista(
                                         name: conferencistas_list[index]['name'],
                                         photo: conferencistas_list[index]['photo'],
                                         conference: conferencistas_list[index]['conference'],

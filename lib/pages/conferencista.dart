@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'maps.dart';
 
-class Ponente extends StatefulWidget{
+class Conferencista extends StatefulWidget{
   final String name;
   final String photo;
   final String conference;
@@ -10,7 +10,7 @@ class Ponente extends StatefulWidget{
   final String place;
   final double lat;
   final double lng;
-  Ponente({Key key,
+  Conferencista({Key key,
     @required this.name,
     @required this.photo,
     @required this.conference,
@@ -20,10 +20,10 @@ class Ponente extends StatefulWidget{
     @required this.lng
   });
   @override
-  _PonenteState createState() => _PonenteState();
+  _ConferencistaState createState() => _ConferencistaState();
 }
 
-class _PonenteState extends State <Ponente>{
+class _ConferencistaState extends State <Conferencista>{
   Color mainColor = const Color(0xff3C3261);
 
   @override

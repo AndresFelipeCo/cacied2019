@@ -12,7 +12,7 @@ class Items extends StatefulWidget{
 class _ItemsState extends State<Items>{
   var item_list = [
     {
-      "name": "Ponencias",
+      "name": "Conferencias",
       "picture": "images/002-trazar.png",
     },
     {
@@ -118,7 +118,7 @@ class Single_item extends StatelessWidget{
 
 void ItemAction(String item, context){
   switch (item) {
-    case "Ponencias":
+    case "Conferencias":
       Navigator.push(context,
           new MaterialPageRoute(builder: (context) {
             return ListMenu(title: item);
