@@ -1,4 +1,4 @@
-package co.edu.udenar.cacied;
+package co.edu.umariana.cacied2019;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;
