@@ -98,59 +98,35 @@ class _ListMenuState extends State<ListMenu>{
 
   var conferencistas_list = [
     {
-      "name": "JORGE VILLALOBOS SALCEDO",
-      "conference": "Formando arquitentos de TIC",
-      "place": "Auditorio Madre Caridad Universidad Mariana",
-      "photo": 'images/conference/01.jpg',
-      "lat" :"1.223875",
-      "lng" : "-77.283344",
-      "formacion": "Ph.D en Informática, Universidad Joseph Fourier (Grenoble, Francia), Master en Informática, Institut National Polytechnique (Grenoble, Francia), Ingeniero de Sistemas y Computación, Universidad de los Andes, Postdoctorado, Laboratorio LSR (Grenoble, Francia), Profesor Asociado Departamento de Ingeniería de Sistemas y Computación de la Universidad de los Andes. Investigador y consultor en las áreas de Arquitectura empresarial, Arquitectura de procesos y Arquitectura de solución.\nPertenece al Grupo de investigación TICSw - Tecnologías de la Información y Construcción de Software - TICSw"
+      "name": "Mario Linares Vásquez",
+      "conference": "",
+      "place": "Universidad de Nariño",
+      "photo": 'images/conference/MarioLinaresV.jpg',
+      "lat" :"1.2323",
+      "lng" : "-77.2930",
+      "formacion": "Profesor Asistente de la Universidad de los Andes (Colombia). Ingeniero de Sistemas y Computación de la Universidad Nacional, Magister en Ingeniería en Sistemas y Computación de la misma Universidad. Doctor en Ciencias de Computación de The College of William and Mary, VA, US. Ganador de varios distinguished paper awards de la ACM. Ganador de un reserach grant de Google Latam.",
+      "areas": "Ingeniería de Software Automatizada\n\nDiseño Universal\n\nMinería de Repositorios de Software\n\nDesarrollo de Apps con Impacto Social",
     },
     {
-      "name": "JORGE VILLALOBOS SALCEDO",
-      "conference": "Formando arquitentos de TIC",
-      "place": "Auditorio Madre Caridad Universidad Mariana",
-      "photo": 'images/conference/01.jpg',
-      "lat" :"1.223875",
-      "lng" : "-77.283344",
-      "formacion": "Ph.D en Informática, Universidad Joseph Fourier (Grenoble, Francia), Master en Informática, Institut National Polytechnique (Grenoble, Francia), Ingeniero de Sistemas y Computación, Universidad de los Andes, Postdoctorado, Laboratorio LSR (Grenoble, Francia), Profesor Asociado Departamento de Ingeniería de Sistemas y Computación de la Universidad de los Andes. Investigador y consultor en las áreas de Arquitectura empresarial, Arquitectura de procesos y Arquitectura de solución.\nPertenece al Grupo de investigación TICSw - Tecnologías de la Información y Construcción de Software - TICSw"
+      "name": "Marcelo Abel Soria",
+      "conference": "",
+      "place": "Universidad de Nariño",
+      "photo": 'images/conference/MarceloSoria.jpg',
+      "lat" :"1.2323",
+      "lng" : "-77.2930",
+      "formacion": "Doctor en Ciencias Biológicas. Universidad de Buenos Aires. 1997. Tema de tesis: Producción de ácido cítrico por miembros del género Aspergillus. Calificación: sobresaliente.\n\n Licenciado en Ciencias Biológicas (Diploma de honor). Facultad de Ciencias Exactas y Naturales. UBA. l990. Orientación: Genética Molecular y Biotecnología.",
+      "areas": "Microbiología y agricultura\n\nMinería de Datos\n\nBioestadística",
     },
     {
-      "name": "JORGE VILLALOBOS SALCEDO",
-      "conference": "Formando arquitentos de TIC",
-      "place": "Auditorio Madre Caridad Universidad Mariana",
-      "photo": 'images/conference/01.jpg',
-      "lat" :"1.223875",
-      "lng" : "-77.283344",
-      "formacion": "Ph.D en Informática, Universidad Joseph Fourier (Grenoble, Francia), Master en Informática, Institut National Polytechnique (Grenoble, Francia), Ingeniero de Sistemas y Computación, Universidad de los Andes, Postdoctorado, Laboratorio LSR (Grenoble, Francia), Profesor Asociado Departamento de Ingeniería de Sistemas y Computación de la Universidad de los Andes. Investigador y consultor en las áreas de Arquitectura empresarial, Arquitectura de procesos y Arquitectura de solución.\nPertenece al Grupo de investigación TICSw - Tecnologías de la Información y Construcción de Software - TICSw"
+      "name": "Ramón Giraldo Henao",
+      "conference": "",
+      "place": "Universidad de Nariño",
+      "photo": 'images/conference/RamonGiraldo.jpg',
+      "lat" :"1.2323",
+      "lng" : "-77.2930",
+      "formacion": "Estadístico. Universidad Nacional de Colombia, Bogotá, 1986-1993. \n Especialista en Estadística, Universidad Nacional de Colombia, Bogotá, 1994-1996. Maestría en Estadística, Universidad Nacional de Colombia, Bogotá,1998-2002. Doctor en Estadística. Universidad Politécnica de Cataluña, Barcelona, España. 2005-2009.",
+      "areas": "Estadística espacial\n\nEstadística no paramétrica\n\nAnálisis de datos funcionales\n\nEnseñanza de la estadística usando métodos de Monte Carlo\n\nAplicaciones de la estadística en problemas ambientales",
     },
-    {
-      "name": "JORGE VILLALOBOS SALCEDO",
-      "conference": "Formando arquitentos de TIC",
-      "place": "Auditorio Madre Caridad Universidad Mariana",
-      "photo": 'images/conference/01.jpg',
-      "lat" :"1.223875",
-      "lng" : "-77.283344",
-      "formacion": "Ph.D en Informática, Universidad Joseph Fourier (Grenoble, Francia), Master en Informática, Institut National Polytechnique (Grenoble, Francia), Ingeniero de Sistemas y Computación, Universidad de los Andes, Postdoctorado, Laboratorio LSR (Grenoble, Francia), Profesor Asociado Departamento de Ingeniería de Sistemas y Computación de la Universidad de los Andes. Investigador y consultor en las áreas de Arquitectura empresarial, Arquitectura de procesos y Arquitectura de solución.\nPertenece al Grupo de investigación TICSw - Tecnologías de la Información y Construcción de Software - TICSw"
-    },
-    {
-      "name": "JORGE VILLALOBOS SALCEDO",
-      "conference": "Formando arquitentos de TIC",
-      "place": "Auditorio Madre Caridad Universidad Mariana",
-      "photo": 'images/conference/01.jpg',
-      "lat" :"1.223875",
-      "lng" : "-77.283344",
-      "formacion": "Ph.D en Informática, Universidad Joseph Fourier (Grenoble, Francia), Master en Informática, Institut National Polytechnique (Grenoble, Francia), Ingeniero de Sistemas y Computación, Universidad de los Andes, Postdoctorado, Laboratorio LSR (Grenoble, Francia), Profesor Asociado Departamento de Ingeniería de Sistemas y Computación de la Universidad de los Andes. Investigador y consultor en las áreas de Arquitectura empresarial, Arquitectura de procesos y Arquitectura de solución.\nPertenece al Grupo de investigación TICSw - Tecnologías de la Información y Construcción de Software - TICSw"
-    },
-    {
-      "name": "JORGE VILLALOBOS SALCEDO",
-      "conference": "Formando arquitentos de TIC",
-      "place": "Auditorio Madre Caridad Universidad Mariana",
-      "photo": 'images/conference/01.jpg',
-      "lat" :"1.223875",
-      "lng" : "-77.283344",
-      "formacion": "Ph.D en Informática, Universidad Joseph Fourier (Grenoble, Francia), Master en Informática, Institut National Polytechnique (Grenoble, Francia), Ingeniero de Sistemas y Computación, Universidad de los Andes, Postdoctorado, Laboratorio LSR (Grenoble, Francia), Profesor Asociado Departamento de Ingeniería de Sistemas y Computación de la Universidad de los Andes. Investigador y consultor en las áreas de Arquitectura empresarial, Arquitectura de procesos y Arquitectura de solución.\nPertenece al Grupo de investigación TICSw - Tecnologías de la Información y Construcción de Software - TICSw"
-    }
   ];
 
   @override
@@ -222,6 +198,7 @@ class _ListMenuState extends State<ListMenu>{
                                         photo: conferencistas_list[index]['photo'],
                                         conference: conferencistas_list[index]['conference'],
                                         formacion: conferencistas_list[index]['formacion'],
+                                        areas: conferencistas_list[index]['areas'],
                                         place: conferencistas_list[index]['place'],
                                         lat: double.parse(conferencistas_list[index]['lat']),
                                         lng: double.parse(conferencistas_list[index]['lng']),

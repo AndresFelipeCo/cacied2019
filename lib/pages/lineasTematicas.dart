@@ -66,7 +66,7 @@ class StuffInTiles extends StatelessWidget {
           onLongPress: () => print("long press"),
           onTap: (){
             if(t.hour != ''){
-              
+
             }
           },
           //subtitle: new Text("Subtitle"),

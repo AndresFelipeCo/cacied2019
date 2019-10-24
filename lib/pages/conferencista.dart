@@ -7,6 +7,7 @@ class Conferencista extends StatefulWidget{
   final String photo;
   final String conference;
   final String formacion;
+  final String areas;
   final String place;
   final double lat;
   final double lng;
@@ -15,6 +16,7 @@ class Conferencista extends StatefulWidget{
     @required this.photo,
     @required this.conference,
     @required this.formacion,
+    @required this.areas,
     @required this.place,
     @required this.lat,
     @required this.lng
@@ -34,7 +36,7 @@ class _ConferencistaState extends State <Conferencista>{
           headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled){
             return <Widget>[
               SliverAppBar(
-                expandedHeight: 300.0,
+                expandedHeight: 250.0,
                 floating: false,
                 pinned: true,
                 flexibleSpace: FlexibleSpaceBar(
@@ -91,6 +93,36 @@ class _ConferencistaState extends State <Conferencista>{
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(widget.formacion.toString(),
+                        maxLines: 30,
+                        style: new TextStyle(
+                          color: Colors.grey,
+                          fontSize: 12.0,
+                          fontFamily: 'Arvo',
+                          fontWeight: FontWeight.bold,
+                        ),
+                        textAlign: TextAlign.justify,
+                      ),
+                    ),
+                    Container(
+                      width: 300.0,
+                      height: 0.5,
+                      color: const Color(0xD2D2E1ff),
+                      margin: const EdgeInsets.all(5.0),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text("Áreas de interés:".toString(),
+                        style: new TextStyle(
+                          fontSize: 15.0,
+                          fontFamily: 'Arvo',
+                          fontWeight: FontWeight.bold,
+                        ),
+                        textAlign: TextAlign.left,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(widget.areas.toString(),
                         maxLines: 30,
                         style: new TextStyle(
                           color: Colors.grey,
