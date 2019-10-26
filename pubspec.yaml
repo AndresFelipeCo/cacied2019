@@ -21,6 +21,7 @@ dependencies:
     sdk: flutter
   carousel_pro: ^1.0.0
   flutter_map: any
+  flare_flutter: ^1.2.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -64,12 +65,14 @@ flutter:
     - images/conference/MarioLinaresV.jpg
     - images/conference/MarceloSoria.jpg
     - images/conference/RamonGiraldo.jpg
+    - images/conference/EstebanBurgos.jpg
     - images/sites/la_cocha.jpg
     - images/sites/lagunaVerde.jpg
     - images/sites/las_lajas.jpg
     - images/sites/museo_carnaval.jpg
     - images/sites/museo_oro.jpg
     - images/sites/plaza_narino.jpg
+    - images/CACIED2019.flr
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

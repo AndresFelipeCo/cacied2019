@@ -99,7 +99,7 @@ class _ListMenuState extends State<ListMenu>{
   var conferencistas_list = [
     {
       "name": "Mario Linares Vásquez",
-      "conference": "",
+      "conference": "La supremacía de los monos, rippers y robots sobre los tester",
       "place": "Universidad de Nariño",
       "photo": 'images/conference/MarioLinaresV.jpg',
       "lat" :"1.2323",
@@ -109,7 +109,7 @@ class _ListMenuState extends State<ListMenu>{
     },
     {
       "name": "Marcelo Abel Soria",
-      "conference": "",
+      "conference": "LA FORMACIÓN DE CIENTÍFICOS DE DATOS",
       "place": "Universidad de Nariño",
       "photo": 'images/conference/MarceloSoria.jpg',
       "lat" :"1.2323",
@@ -119,13 +119,23 @@ class _ListMenuState extends State<ListMenu>{
     },
     {
       "name": "Ramón Giraldo Henao",
-      "conference": "",
+      "conference": "CIENCIA DE DATOS DESDE LA ESTADISTICA",
       "place": "Universidad de Nariño",
       "photo": 'images/conference/RamonGiraldo.jpg',
       "lat" :"1.2323",
       "lng" : "-77.2930",
       "formacion": "Estadístico. Universidad Nacional de Colombia, Bogotá, 1986-1993. \n Especialista en Estadística, Universidad Nacional de Colombia, Bogotá, 1994-1996. Maestría en Estadística, Universidad Nacional de Colombia, Bogotá,1998-2002. Doctor en Estadística. Universidad Politécnica de Cataluña, Barcelona, España. 2005-2009.",
       "areas": "Estadística espacial\n\nEstadística no paramétrica\n\nAnálisis de datos funcionales\n\nEnseñanza de la estadística usando métodos de Monte Carlo\n\nAplicaciones de la estadística en problemas ambientales",
+    },
+    {
+      "name": "Cesar Esteban Burgos Ramirez",
+      "conference": "El Oficial de Seguridad de la Información: un enfoque estratégico al aseguramiento de la información empresarial",
+      "place": "Universidad de Nariño",
+      "photo": 'images/conference/EstebanBurgos.jpg',
+      "lat" :"1.2323",
+      "lng" : "-77.2930",
+      "formacion": "Ingeniero de Sistemas de la Universidad de Nariño, Magíster en Seguridad de la Información de la Universidad de los Andes, Profesional con más de 5 años de trayectoria en el campo académico y empresarial de la seguridad de la información. Actualmente lidera e impulsa en su región la seguridad de la información e informática en el sector financiero, desempañándose como CISO (chief information security officer), su experiencia se centraliza en: Sistemas de Gestión de Seguridad de la información, Continuidad del Negocio y DRP (Disaster Recovery Plan), gestión de riesgos y vulnerabilidades de la información, seguridad móvil, Gestión de Incidentes de Seguridad de la Información, infraestructura segura de TI y Protección de datos personales.",
+      "areas": "Seguridad de la Información",
     },
   ];
 

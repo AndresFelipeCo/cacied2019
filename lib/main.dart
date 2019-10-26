@@ -1,3 +1,4 @@
+import 'package:cacied/pages/splashScreen.dart';
 import 'package:flutter/material.dart';
 import 'pages/home.dart';
 
@@ -37,11 +38,11 @@ class _MyApp extends State<MyApp>{
           body1: TextStyle(fontSize: 14.0, fontFamily: 'Hind'),
         ),
       ),
-      initialRoute: '/',
+      initialRoute: '/splashScreen',
       routes: {
         // Cuando naveguemos hacia la ruta "/", crearemos el Widget FirstScreen
         '/': (context) => HomePage(),
-        //'/splashScreen': (context) => SplashScreen(),
+        '/splashScreen': (context) => SplashScreen(),
       },
 
     );
