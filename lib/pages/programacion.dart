@@ -23,12 +23,12 @@ class _ProgramacionState extends State<Programacion>{
       "photo": "images/cesmag.jpg",
       "day": "7"
     },
-    {
+    /*{
       "date": "Viernes 8 de Noviembre",
       "place": "Universidad de Nariño",
       "day": "8",
       "photo": "images/udenar.jpg"
-    }
+    }*/
   ];
   @override
   Widget build(BuildContext context) {

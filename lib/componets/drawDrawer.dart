@@ -72,12 +72,12 @@ class DrawDrawer extends StatelessWidget{
 
         InkWell(
           onTap: (){
-            if (title!='Programación'){
-              ItemAction('Programación', context);
+            if (title!='Programación de Ponencias'){
+              ItemAction('Programación de Ponencias', context);
             }
           },
           child: ListTile(
-            title: Text('Programación'),
+            title: Text('Programación de Ponencias'),
             leading: Icon(Icons.event),
           ),
         ),

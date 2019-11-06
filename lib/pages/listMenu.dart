@@ -1,4 +1,3 @@
-import 'package:cacied/componets/drawDrawer.dart';
 import 'package:cacied/componets/drawListMenu.dart';
 import 'package:cacied/pages/conferencia.dart';
 import 'package:cacied/pages/conferencista.dart';
@@ -27,19 +26,19 @@ class _ListMenuState extends State<ListMenu>{
   var conferencistas_list = [
     {
       "name": "Marcelo Abel Soria",
-      "conference": "LA FORMACIÓN DE CIENTÍFICOS DE DATOS",
+      "conference": "La Formación de Científicos de Datos\n6 Nov. (10:30 AM - 12:00 M)",
       "place": "Universidad Mariana",
-      "stage": "Por definir",
+      "stage": "Auditorio Madre Caridad",
       "hour": "10:30 AM -12 PM",
       "photo": 'images/conference/MarceloSoria.jpg',
       "lat" :"1.223875",
       "lng" : "-77.283344",
-      "formacion": "Doctor en Ciencias Biológicas. Universidad de Buenos Aires. 1997. Tema de tesis: Producción de ácido cítrico por miembros del género Aspergillus. Calificación: sobresaliente.\n\n Licenciado en Ciencias Biológicas (Diploma de honor). Facultad de Ciencias Exactas y Naturales. UBA. l990. Orientación: Genética Molecular y Biotecnología.",
+      "formacion": "Doctor en Ciencias Biológicas. Universidad de Buenos Aires. 1997. Tema de tesis: Producción de ácido cítrico por miembros del género Aspergillus. Calificación: sobresaliente.\n\nLicenciado en Ciencias Biológicas (Diploma de honor). Facultad de Ciencias Exactas y Naturales. UBA. l990. Orientación: Genética Molecular y Biotecnología.",
       "areas": "Microbiología y agricultura\n\nMinería de Datos\n\nBioestadística",
     },
     {
       "name": "Ramón Giraldo Henao",
-      "conference": "CIENCIA DE DATOS DESDE LA ESTADISTICA",
+      "conference": "Ciencia de Datos Desde la Estadística\n7 Nov. (2:00 - 4:00 PM)",
       "place": "Universidad CESMAG",
       "stage": "Auditorio San Francisco.",
       "hour": "2:00 - 4:00 PM",
@@ -51,7 +50,7 @@ class _ListMenuState extends State<ListMenu>{
     },
     {
       "name": "Cesar Esteban Burgos Ramirez",
-      "conference": "El papel del CISO en las organizaciones",
+      "conference": "El Papel del CISO en las Organizaciones\n8 Nov. (8:00 - 9:30 AM)",
       "place": "Universidad de Nariño",
       "stage": "Auditorio Luis Santander",
       "hour": "8:00 - 9:30 AM",
@@ -63,7 +62,7 @@ class _ListMenuState extends State<ListMenu>{
     },
     {
       "name": "Mario Linares Vásquez",
-      "conference": "La supremacía de los monos, rippers y robots sobre los tester",
+      "conference": "La Supremacía de los Monos, Rippers y Robots Sobre Los Tester\n8 Nov. (10:30 - 11:30 AM)",
       "place": "Universidad de Nariño",
       "stage": "Auditorio Luis Santander",
       "hour": "10:30 - 11:30 AM",

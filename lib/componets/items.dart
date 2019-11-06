@@ -17,7 +17,7 @@ class _ItemsState extends State<Items>{
       "picture": "images/001-equipo.png",
     },
     {
-      "name": "Programación",
+      "name": "Programación de Ponencias",
       "picture": "images/005-calendario.png",
     },
     {
@@ -134,7 +134,7 @@ void ItemAction(String item, context){
           )
       );
       break;
-    case "Programación":
+    case "Programación de Ponencias":
       Navigator.push(
           context,
           MaterialPageRoute(
