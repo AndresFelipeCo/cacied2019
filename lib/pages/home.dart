@@ -40,11 +40,11 @@ class _HomePageState extends State<HomePage>{
         title: Text('CACIED 2019'),
         centerTitle: true,
       ),
-      drawer: Drawer(
+      /*drawer: Drawer(
         child: DrawDrawer(
           title: 'home',
         )
-      ),
+      ),*/
 
     body: Column(
       children: <Widget>[

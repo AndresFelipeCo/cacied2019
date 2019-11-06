@@ -1,3 +1,4 @@
+import 'package:cacied/pages/acercaDe.dart';
 import 'package:cacied/pages/lugares.dart';
 import 'package:cacied/pages/programacion.dart';
 import 'package:cacied/pages/tematicas.dart';
@@ -16,17 +17,22 @@ class _ItemsState extends State<Items>{
       "picture": "images/001-equipo.png",
     },
     {
-      "name": "Lugares",
-      "picture": "images/003-rural.png",
-    },
-    {
       "name": "Programación",
       "picture": "images/005-calendario.png",
+    },
+    {
+      "name": "Lugares",
+      "picture": "images/003-rural.png",
     },
     {
       "name": "Sitios turísticos",
       "picture": "images/004-valle.png",
     },
+    {
+      "name": "Acerca De",
+      "picture": "",
+    },
+
   ];
 
   @override
@@ -152,6 +158,16 @@ void ItemAction(String item, context){
       Navigator.push(context,
           new MaterialPageRoute(builder: (context) {
             return Lugares(
+                title: item
+            );
+          }
+          )
+      );
+      break;
+    case "Acerca De":
+      Navigator.push(context,
+          new MaterialPageRoute(builder: (context) {
+            return AcercaDe(
                 title: item
             );
           }
