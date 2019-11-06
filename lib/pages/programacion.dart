@@ -119,8 +119,28 @@ class _ProgramacionState extends State<Programacion>{
                         Row(
                           children: <Widget>[
                             Padding(
-                                padding: const EdgeInsets.all(12.0),
-                                child: Icon(Icons.calendar_today, color: const Color(0xff1a237e), size: 50,)
+                              padding: const EdgeInsets.all(0.0),
+                              child: new Container(
+                                margin: const EdgeInsets.all(16.0),
+                                child: new Container(
+                                  width: 70.0,
+                                  height: 70.0,
+                                ),
+                                decoration: new BoxDecoration(
+                                  borderRadius: new BorderRadius.circular(50.0),
+                                  color: Colors.white,
+                                  image: new DecorationImage(
+                                      image: AssetImage(widget.title == 'Programación General' ? listProgG[index]['photo'] : listProg[index]['photo']),
+                                      fit: BoxFit.cover
+                                  ),
+                                  boxShadow: [
+                                    new BoxShadow(
+                                        color: const Color(0xff3C3261),
+                                        blurRadius: 15.0,
+                                        offset: new Offset(2.0, 5.0))
+                                  ],
+                                ),
+                              ),
                             ),
 
                             Expanded(
