@@ -1,3 +1,4 @@
+import 'package:cacied/pages/programacionGeneral.dart';
 import 'package:flutter/material.dart';
 
 import 'lineasTematicas.dart';
@@ -10,6 +11,32 @@ class Programacion extends StatefulWidget{
 }
 
 class _ProgramacionState extends State<Programacion>{
+  var listProgG = [
+    {
+      "date": "Miércoles 6 de Noviembre",
+      "place": "Universidad Mariana",
+      "photo": "images/unimar.jpg",
+      "day": "6"
+    },
+    {
+      "date": "Miércoles 6 de Noviembre",
+      "place": "Universidad de Nariño",
+      "photo": "images/udenar.jpg",
+      "day": "06"
+    },
+    {
+      "date": "Jueves 7 de Noviembre",
+      "place": "Universidad Cesmag",
+      "photo": "images/cesmag.jpg",
+      "day": "7"
+    },
+    {
+      "date": "Viernes 8 de Noviembre",
+      "place": "Universidad de Nariño",
+      "day": "8",
+      "photo": "images/udenar.jpg"
+    },
+  ];
   var listProg = [
     {
       "date": "Miércoles 6 de Noviembre",
@@ -28,7 +55,7 @@ class _ProgramacionState extends State<Programacion>{
       "place": "Universidad de Nariño",
       "day": "8",
       "photo": "images/udenar.jpg"
-    }*/
+    },*/
   ];
   @override
   Widget build(BuildContext context) {
@@ -59,21 +86,33 @@ class _ProgramacionState extends State<Programacion>{
         },
         body: Center(
           child: ListView.builder(
-            itemCount: listProg.length,
+            itemCount: widget.title == 'Programación General' ? listProgG.length : listProg.length,
               itemBuilder: (context, index){
                 return Padding(
                   padding: const EdgeInsets.all(7),
                   child: FlatButton(
                     onPressed: (){
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context){
-                            return LineasTematicas(
-                              title: listProg[index]['date'],
-                              day: listProg[index]['day'],
-                              imageBar: listProg[index]['photo'],
-                            );
-                          })
-                      );
+                      if (widget.title == 'Programación General'){
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context){
+                              return ProgramacionGeneral(
+                                title: listProgG[index]['date'],
+                                day: listProgG[index]['day'],
+                                imageBar: listProgG[index]['photo'],
+                              );
+                            })
+                        );
+                      }else{
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context){
+                              return LineasTematicas(
+                                title: listProg[index]['date'],
+                                day: listProg[index]['day'],
+                                imageBar: listProg[index]['photo'],
+                              );
+                            })
+                        );
+                      }
                     },
                     child: Column(
                       children: <Widget>[
@@ -87,7 +126,7 @@ class _ProgramacionState extends State<Programacion>{
                             Expanded(
                               child: Container(
                                 margin: const EdgeInsets.all(3.0),
-                                child: Text(listProg[index]['date'] + '\n' + listProg[index]['place'],
+                                child: Text(widget.title == 'Programación General' ? listProgG[index]['date'] + '\n' + listProgG[index]['place'] :listProg[index]['date'] + '\n' + listProg[index]['place'],
                                   maxLines: 5,
                                   style: new TextStyle(
                                     fontSize: 17.0,

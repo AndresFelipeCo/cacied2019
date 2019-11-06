@@ -27,7 +27,7 @@ class Ponencia extends StatelessWidget{
               pinned: true,
               flexibleSpace: FlexibleSpaceBar(
                   centerTitle: true,
-                  title: Text('Ponencia',
+                  title: Text('CACIED 2019',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 16.0,

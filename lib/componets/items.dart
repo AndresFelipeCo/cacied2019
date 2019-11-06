@@ -13,6 +13,10 @@ class Items extends StatefulWidget{
 class _ItemsState extends State<Items>{
   var item_list = [
     {
+      "name": "Programación General",
+      "picture": "images/logo.png",
+    },
+    {
       "name": "Conferencistas",
       "picture": "images/001-equipo.png",
     },
@@ -116,6 +120,16 @@ class Single_item extends StatelessWidget{
 
 void ItemAction(String item, context){
   switch (item) {
+    case "Programación General":
+      Navigator.push(
+          context,
+          MaterialPageRoute(
+              builder: (context){
+                return Programacion(title: item,);
+              }
+          )
+      );
+      break;
     case "Conferencistas":
       Navigator.push(context,
           new MaterialPageRoute(builder: (context) {
