@@ -80,6 +80,8 @@ flutter:
     - images/sites/museo_oro.jpg
     - images/sites/plaza_narino.jpg
     - images/CACIED2019.flr
+    - images/AndresFelipe.jpg
+    - images/Franklin.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
