@@ -174,14 +174,14 @@ class _ListMenuState extends State<ListMenu>{
                 children: <Widget>[
                   Expanded(
                       child: ListView.builder(
-                        itemCount: widget.title == 'Conferencias' ? ponencias_list.length : conferencistas_list.length,
+                        itemCount: widget.title == 'Talleres' ? ponencias_list.length : conferencistas_list.length,
                         itemBuilder: (context, index){
                           return FlatButton(
                             child: DrawListMenu(
-                              title: widget.title == 'Conferencias' ? 'Grupo: ' + ponencias_list[index]['group'] : conferencistas_list[index]['name'],
-                              subtitle: widget.title == 'Conferencias' ? null : 'Conferencia:',
-                              description: widget.title == 'Conferencias' ? ponencias_list[index]['name'] : conferencistas_list[index]['conference'],
-                              icon: widget.title == 'Conferencias' ? null : conferencistas_list[index]['photo'],
+                              title: widget.title == 'Talleres' ? 'Grupo: ' + ponencias_list[index]['group'] : conferencistas_list[index]['name'],
+                              subtitle: widget.title == 'Talleres' ? null : 'Conferencia:',
+                              description: widget.title == 'Talleres' ? ponencias_list[index]['name'] : conferencistas_list[index]['conference'],
+                              icon: widget.title == 'Talleres' ? null : conferencistas_list[index]['photo'],
                             ),
                             onPressed: () {
                               if(widget.title == 'Conferencias'){

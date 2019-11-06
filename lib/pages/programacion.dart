@@ -65,17 +65,15 @@ class _ProgramacionState extends State<Programacion>{
                   padding: const EdgeInsets.all(7),
                   child: FlatButton(
                     onPressed: (){
-                      if(listProg[index]['day'] != '8'){
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context){
-                              return LineasTematicas(
-                                title: listProg[index]['date'],
-                                day: listProg[index]['day'],
-                                imageBar: listProg[index]['photo'],
-                              );
-                            })
-                        );
-                      }
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context){
+                            return LineasTematicas(
+                              title: listProg[index]['date'],
+                              day: listProg[index]['day'],
+                              imageBar: listProg[index]['photo'],
+                            );
+                          })
+                      );
                     },
                     child: Column(
                       children: <Widget>[

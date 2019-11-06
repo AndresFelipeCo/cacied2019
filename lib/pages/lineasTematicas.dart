@@ -425,6 +425,54 @@ List<MyTile> listProgramacionMariana = <MyTile>[
 
 List<MyTile> listProgramacionCesmag = <MyTile>[
   MyTile(
+    'Talleres','','', '', '', 0, 0,
+    <MyTile>[
+      MyTile('Sesión 1','','', '', '', 0, 0,),
+      MyTile(
+        'Hacking Web',
+        '8:30 AM\n10:00 AM',
+        'Mauricio Chaves\nCupos: 40',
+        'Universidad Cesmag',
+        'Aula1, Cuarto Piso Edificio San Francisco',
+        1.208740,
+        -77.278022,
+      ),
+      MyTile(
+        '¿Cómo nos mienten las gráficas?',
+        '8:30 AM\n10:00 AM',
+        'Alvaro Martinez\nCupos: 35',
+        'Universidad Cesmag',
+        'Aula7,  – Tercer Piso Edificio San Francisco',
+        1.208740,
+        -77.278022,
+      ),
+      MyTile(
+        'RECESO',
+        '10:00 AM\n10:30 AM',
+        '','', '',0,0,
+      ),
+      MyTile('Sesión 1','','', '', '', 0, 0,),
+      MyTile(
+        'Hacking Web',
+        '10:30 AM\n12:30 AM',
+        'Mauricio Chaves\nCupos: 40',
+        'Universidad Cesmag',
+        'Aula1, Cuarto Piso Edificio San Francisco',
+        1.208740,
+        -77.278022,
+      ),
+      MyTile(
+        '¿Cómo nos mienten las gráficas?',
+        '10:30 AM\n12:30 AM',
+        'Alvaro Martinez\nCupos: 35',
+        'Universidad Cesmag',
+        'Aula7,  – Tercer Piso Edificio San Francisco',
+        1.208740,
+        -77.278022,
+      ),
+    ],
+  ),
+  MyTile(
     'Gestión del Conocimiento','','', '', '', 0, 0,
     <MyTile>[
       MyTile(
