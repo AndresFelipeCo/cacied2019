@@ -30,7 +30,7 @@ class _ItemsState extends State<Items>{
     },
     {
       "name": "Acerca De",
-      "picture": "",
+      "picture": "images/info.png",
     },
 
   ];
