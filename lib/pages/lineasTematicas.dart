@@ -40,9 +40,9 @@ class _LineasTematicasState extends State<LineasTematicas>{
           },
           body: ListView.builder(
             itemBuilder: (BuildContext context, int index) {
-              return new StuffInTiles(widget.day == '6' ? listProgramacionMariana[index] : listProgramacionCesmag[index], context);
+              return new StuffInTiles(widget.day == '6' ? listProgramacionMariana[index] : widget.day == '7' ? listProgramacionCesmag[index] : listProgramacionUDENAR[index], context);
             },
-            itemCount: widget.day == '6' ? listProgramacionMariana.length : listProgramacionCesmag.length,
+            itemCount: widget.day == '6' ? listProgramacionMariana.length : widget.day == '7' ? listProgramacionCesmag.length : listProgramacionUDENAR.length,
           )
       ),
     );
@@ -108,6 +108,16 @@ class MyTile {
   List<MyTile> children;
   MyTile(this.title, this.hour, this.author, this.place, this.stage, this.lat, this.lng, [this.children = const <MyTile>[]]);
 }
+
+List<MyTile> listProgramacionUDENAR = <MyTile>[
+  MyTile(
+    'Premiación mejores ponencias, posters. Cierre del evento.',
+    '11:30 - 12:00 PM', 'CACIED 2019','Universidad de Nariño',
+    'Auditorio Luis Santander'
+    ,1.2323,
+    -77.2930,
+  ),
+];
 
 List<MyTile> listProgramacionMariana = <MyTile>[
   new MyTile(
@@ -433,7 +443,7 @@ List<MyTile> listProgramacionCesmag = <MyTile>[
         '8:30 AM\n10:00 AM',
         'Mauricio Chaves\nCupos: 40',
         'Universidad Cesmag',
-        'Aula1, Cuarto Piso Edificio San Francisco',
+        'Aula 1, Cuarto Piso Edificio San Francisco',
         1.208740,
         -77.278022,
       ),
@@ -442,7 +452,7 @@ List<MyTile> listProgramacionCesmag = <MyTile>[
         '8:30 AM\n10:00 AM',
         'Alvaro Martinez\nCupos: 35',
         'Universidad Cesmag',
-        'Aula7,  – Tercer Piso Edificio San Francisco',
+        'Aula 7, – Tercer Piso Edificio San Francisco',
         1.208740,
         -77.278022,
       ),
@@ -451,13 +461,13 @@ List<MyTile> listProgramacionCesmag = <MyTile>[
         '10:00 AM\n10:30 AM',
         '','', '',0,0,
       ),
-      MyTile('Sesión 1','','', '', '', 0, 0,),
+      MyTile('Sesión 2','','', '', '', 0, 0,),
       MyTile(
         'Hacking Web',
         '10:30 AM\n12:30 AM',
         'Mauricio Chaves\nCupos: 40',
         'Universidad Cesmag',
-        'Aula1, Cuarto Piso Edificio San Francisco',
+        'Aula 1, Cuarto Piso Edificio San Francisco',
         1.208740,
         -77.278022,
       ),
@@ -466,7 +476,7 @@ List<MyTile> listProgramacionCesmag = <MyTile>[
         '10:30 AM\n12:30 AM',
         'Alvaro Martinez\nCupos: 35',
         'Universidad Cesmag',
-        'Aula7,  – Tercer Piso Edificio San Francisco',
+        'Aula7, – Tercer Piso Edificio San Francisco',
         1.208740,
         -77.278022,
       ),

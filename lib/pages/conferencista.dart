@@ -9,6 +9,8 @@ class Conferencista extends StatefulWidget{
   final String formacion;
   final String areas;
   final String place;
+  final String stage;
+  final String hour;
   final double lat;
   final double lng;
   Conferencista({Key key,
@@ -18,6 +20,8 @@ class Conferencista extends StatefulWidget{
     @required this.formacion,
     @required this.areas,
     @required this.place,
+    @required this.stage,
+    @required this.hour,
     @required this.lat,
     @required this.lng
   });
@@ -189,7 +193,28 @@ class _ConferencistaState extends State <Conferencista>{
                                     ),
                                     textAlign: TextAlign.center,
                                   ),
-                                ],                            crossAxisAlignment: CrossAxisAlignment.start,),
+                                  Text(widget.stage.toString(),
+                                    maxLines: 30,
+                                    style: new TextStyle(
+                                      color: Colors.grey,
+                                      fontSize: 12.0,
+                                      fontFamily: 'Arvo',
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                    textAlign: TextAlign.justify,
+                                  ),
+                                  Text(widget.hour.toString(),
+                                    maxLines: 30,
+                                    style: new TextStyle(
+                                      color: Colors.grey,
+                                      fontSize: 12.0,
+                                      fontFamily: 'Arvo',
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                    textAlign: TextAlign.justify,
+                                  ),
+                                ],
+                                  crossAxisAlignment: CrossAxisAlignment.start,),
                               )
                           ),
                         ],

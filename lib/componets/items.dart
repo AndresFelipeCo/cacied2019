@@ -110,14 +110,6 @@ class Single_item extends StatelessWidget{
 
 void ItemAction(String item, context){
   switch (item) {
-    case "Talleres":
-      Navigator.push(context,
-          new MaterialPageRoute(builder: (context) {
-            return Programacion(title: item,);
-          }
-          )
-      );
-      break;
     case "Conferencistas":
       Navigator.push(context,
           new MaterialPageRoute(builder: (context) {
